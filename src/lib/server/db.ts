@@ -15,7 +15,7 @@ db.exec(`
     CREATE TABLE IF NOT EXISTS todos (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         description TEXT NOT NULL,
-        inactive INTEGER NOT NULL DEFAULT 0
+        inactive INTEGER NOT NULL DEFAULT 0,
         archived INTEGER NOT NULL DEFAULT 0
     )
 `);
